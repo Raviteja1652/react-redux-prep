@@ -1,7 +1,7 @@
 import react from 'react';
 import {useDispatch, useSelector} from 'react-redux'
 import classes from './Header.module.css';
-import { authActions } from '../Store/index';
+import { authActions } from '../Store/auth';
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -27,7 +27,7 @@ const Header = () => {
               <button onClick={logoutHandler}>Logout</button>
             </li>
           </>}
-          
+
         </ul>
       </nav>
     </header>
